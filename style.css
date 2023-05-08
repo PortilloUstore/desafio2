@@ -1,0 +1,133 @@
+body {
+  font-family: Helvetica, Helvetica Neue, sans-serif;
+  text-align: left;
+  background: #e9eeed;
+  font-size: 13px;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.area {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.area .panel {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+  box-shadow: 0 10px 1em rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  background: white;
+}
+
+.area .panel .header {
+  border-radius: 3px 3px 0 0;
+  display: flex;
+  background-color: #237;
+  color: white;
+  padding: 0.6rem 1rem;
+}
+
+.area .panel .header h2 {
+  font-weight: normal;
+  margin: 0;
+  font-size: 18px;
+}
+
+.area .panel .header .buttons {
+  display: flex;
+}
+
+.area .panel .header .buttons a {
+  display: flex;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
+}
+
+.area .panel .header .buttons a img {
+  height: 16px;
+  margin-right: 5px;
+}
+
+.area .panel .header .buttons .btn-warn {
+  background-color: #d00;
+  margin-right: 0.5rem;
+}
+.area .panel .header .buttons .btn-success {
+  background-color: #082;
+}
+
+.area .panel .content table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.area .panel .content table tr td,
+.area .panel .content table tr th {
+  padding: 0.3rem 0.5rem;
+}
+
+.area .panel .content table tr th {
+  border-bottom: 2px solid #ddd;
+}
+
+.area .panel .content table tr td {
+  border-bottom: 1px solid #ddd;
+}
+
+.area .panel .content table tr td:last-child {
+  text-align: right;
+}
+
+.area .panel .content table tr td img {
+  height: 16px;
+  width: auto;
+  margin-left: 10px;
+}
+
+.area .panel .footer {
+  display: flex;
+  padding: 0.6rem 1rem;
+}
+
+.area .panel .footer .showing {
+  color: #669;
+  font-size: 13px;
+}
+
+.area .panel .footer .pagination {
+  display: flex;
+}
+
+.area .panel .footer .pagination a {
+  color: #677;
+  text-decoration: none;
+  display: block;
+  padding: 8px;
+  margin: 0 2px;
+  border-radius: 3px;
+}
+
+.area .panel .footer .pagination a:hover,
+.area .panel .footer .pagination a.activated {
+  background-color: #237;
+  color: white;
+}
+
+.area .panel .footer .pagination a:hover {
+  background-color: #57c;
+}
+
+.area .panel .footer .pagination a.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}

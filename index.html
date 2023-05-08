@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exemplo do Desafio 2 - Tabela</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="area">
+      <div class="panel">
+        <div class="header">
+          <h2 class="title">Menage <b>Employees</b></h2>
+          <div class="flex-auto"></div>
+          <div class="buttons">
+            <a href="#" class="btn-warn"
+              ><img src="assets/remove.png" /> Delete</a
+            >
+            <a href="#" class="btn-success"
+              ><img src="assets/add.png" /> Add New Employee</a
+            >
+          </div>
+        </div>
+        <div class="content">
+          <table id="employeesList" cellspacing="0">
+            <thead>
+              <tr>
+                <th class="select select-all">
+                  <input type="checkbox" id="selectAll" onclick="selectAll()" />
+                </th>
+                <th>Name</th>
+                <th>E-mail</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div class="footer">
+          <div class="showing">
+            Showing <b class="qt_page">0</b> out of
+            <b class="total">0</b> entries
+          </div>
+          <div class="flex-auto"></div>
+          <div class="pagination" id="pagination"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
